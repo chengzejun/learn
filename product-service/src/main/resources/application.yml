@@ -1,0 +1,14 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: server-user
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/playtest?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    userName: root
+    password: 667788dog
+  jpa:
+    database: MySQL
+    show-sql: true
+    open-in-view: true

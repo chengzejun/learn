@@ -1,0 +1,24 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: czj-dubbo-consumer
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/playtest?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    userName: root
+    password: 667788dog
+    jpa:
+        database: MySQL
+        show-sql: true
+        open-in-view: true
+  dubbo:
+    application:
+      name: czj-dubbo-consumer   #别名，提供方应用信息，用于计算依赖关系
+    registry:
+      address: zookeeper://10.211.55.3:2181 #使用zookeeper注册中心暴露服务地址
+  servlet:
+      multipart:
+        max-file-size: 100MB
+        max-request-size: 100MB
+

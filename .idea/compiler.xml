@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="designmodal" />
+        <module name="import_test" />
+        <module name="productservice" />
+        <module name="springbootdubboconsumer" />
+        <module name="springbootdubboprovider" />
+        <module name="springbootrabbitmqconsumer" />
+        <module name="springbootrabbitmqprovider" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="designmodal" options="-parameters" />
+      <module name="import_test" options="-parameters" />
+      <module name="productservice" options="-parameters" />
+      <module name="springbootdubboconsumer" options="-parameters" />
+      <module name="springbootdubboprovider" options="-parameters" />
+      <module name="springbootrabbitmqconsumer" options="-parameters" />
+      <module name="springbootrabbitmqprovider" options="-parameters" />
+      <module name="studySpringCloud" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: rabbitmq-provider
+  rabbitmq:
+    host: 10.211.55.3
+    port: 5672
+    username: admin
+    password: 123456
+    #virtual-host: JCcccHost
+    publisher-confirms: true
+    publisher-returns: true
