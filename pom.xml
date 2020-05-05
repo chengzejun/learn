@@ -16,6 +16,7 @@
         <module>springboot-rabbitmq-consumer</module>
         <module>springboot-dubbo-provider</module>
         <module>springboot-dubbo-consumer</module>
+        <module>springboot-shardingJDBC</module>
     </modules>
 
     <parent>
