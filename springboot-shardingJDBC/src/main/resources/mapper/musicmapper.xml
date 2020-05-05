@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chengzejun.dao.MusicDao" >
+    <resultMap id="BaseResultMap" type="com.chengzejun.entity.Music" >
+        <id column="music_id" property="musicId" jdbcType="INTEGER" />
+        <result column="music_name" property="musicName" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List" >
+        music_id, music_name
+    </sql>
+    <insert id="musicInsert" parameterType="com.chengzejun.entity.Music">
+    insert into t_data_music (music_id, music_name)
+    values (#{musicId,jdbcType=INTEGER}, #{musicName,jdbcType=VARCHAR})
+    </insert>
+</mapper>
