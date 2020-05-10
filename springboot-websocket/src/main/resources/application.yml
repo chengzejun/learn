@@ -1,0 +1,13 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: websocket
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: html5
+    encoding: utf-8
+    servlet:
+      content-type: text/html
